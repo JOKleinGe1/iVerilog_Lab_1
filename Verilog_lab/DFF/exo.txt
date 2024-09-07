@@ -1,0 +1,10 @@
+0. Simuler le projet sans modification. Vérifier qu'il s'agit bien d'une 
+bascule D active sur front montant (DFF). 
+
+1. Modifier le code de la bascule DFF pour intégrer un reset synchrone. 
+Adapter le code du testbench pour qu'il permette de vérifier que la 
+fonction reset est correcte. Conserver une preuve de ce fonctionnement 
+(chronogramme).
+
+
+

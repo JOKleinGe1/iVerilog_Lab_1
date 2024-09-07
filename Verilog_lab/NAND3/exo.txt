@@ -1,0 +1,13 @@
+0. Simuler le projet sans modification. Vérifier que la fonction 
+correspond bien ç une porte NAND à 3 entrées.
+
+1. Modifier le code du fichier test.v pour que la simulation déroule 
+les différentes configuration de l'entrée C,B,A dans l'ordre dans laquelle
+ces configuration apparaissent dans une table de vérité (000, 001, 010, ...
+111). Simuler pour vérifier. 
+
+2. Copier tout le répertoire NAND3  (avec la commande cp) dans un nouveau 
+répertoire NOR3. Changer la fonction NAND3 en NOR3 dans le code de NAND3 et
+adapter les noms des fichiers et le makefile en cohérence avec cette nouvelle
+fonction. (NAND3.V -> NOR3.V) et le nom du module (NAND3 -> NOR3). 
+

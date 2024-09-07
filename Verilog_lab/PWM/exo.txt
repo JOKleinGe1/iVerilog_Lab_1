@@ -1,0 +1,7 @@
+1. Le projet n'est pas complet, il manque un fichier makfile. 
+En utilisant la commande iverilog puis vvp puis gtkwave, visualisez les 
+traces. 
+
+2. Ajouter un fichier makefile en vous inspirant des autres exemples.
+Compiler, simuler et conserver une trace de cette simulation. 
+

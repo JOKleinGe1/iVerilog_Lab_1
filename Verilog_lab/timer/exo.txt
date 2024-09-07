@@ -1,0 +1,8 @@
+1. Compiler le projet et verifier la simulation. Le compteur compte t-il des 
+milliseconde ou des microsecondes ? Vérifier la taille des fichiers générés 
+`(avec la commande ls -al par exemple). 
+
+2. Modifier le code source pour que comptage opère sur des millisecondes. 
+modifier aussi le testbench pour que le comptage puisse se voir. 
+Vérifier la taille des ficiers générés.
+
