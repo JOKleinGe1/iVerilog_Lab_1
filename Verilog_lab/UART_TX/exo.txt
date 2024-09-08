@@ -1,0 +1,3 @@
+1. Simuler cet UART en transmission. Vérifier le BaudRate. Il n'est pas à 9600  Baud, mais quelle est sa valeur précisément ? 
+2. Compléter le design en ajoutant un récépteur. Il faut ajouter environ 40 lignes. Si vous rencontrez des difficultés, passer à l'étape suivante. 
+3. Non, c'était une blague, c'est un peu compliqué (mais pas plus que l'émetteur). Il faut ajouter environ 43 lignes. Par contre vous pouvez faire un schéma bloc détaillé de l'émetteur, ça peut vous être demandé en examen. 

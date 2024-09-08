@@ -1,0 +1,5 @@
+1. Simulate this UART in transmission. Check the BaudRate. It is not at 9600 Baud, but what is its value precisely?
+
+2. Complete the design by adding a receiver. You need to add about 40 lines. If you encounter difficulties, go to the next step.
+
+3. No, it was a joke, it is a bit complicated (but not more than the transmitter). You need to add about 43 lines. On the other hand, you can make a detailed block diagram of the transmitter, it may be asked of you in the exam.
