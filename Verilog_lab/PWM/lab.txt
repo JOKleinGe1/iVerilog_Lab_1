@@ -1,0 +1,6 @@
+1. The project is not complete, a makfile is missing.
+Using the command iverilog then vvp then gtkwave, view the
+waveform.
+
+2. Add a makefile using the other examples as inspiration.
+Compile, simulate and keep a trace of this simulation.
