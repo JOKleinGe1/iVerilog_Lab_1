@@ -11,7 +11,7 @@ module test;
   always #10 clk <= ! clk; 
   
   initial begin 
-    $dumpfile("timer.vcd");
+    $dumpfile("dump.vcd");
     $dumpvars(0,test);
     cr <= 8'b00000000; 
     #200
