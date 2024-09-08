@@ -1,0 +1,7 @@
+0. Simulate the project without modification. Verify that it is indeed a
+D flip-flop active on rising edge (DFF).
+
+1. Modify the DFF flip-flop code to integrate a synchronous reset.
+Adapt the testbench code so that it can verify that the
+reset function is correct. Keep proof of this operation
+(waveform).
