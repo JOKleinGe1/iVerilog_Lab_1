@@ -1,0 +1,5 @@
+1. Compile the project and check the simulation. Does the counter count milliseconds or microseconds? Check the size of the generated files (with the ls -al command for example).
+
+2. Modify the source code so that the counting operates on milliseconds.
+Also modify the testbench so that the counting can be seen.
+Check the size of the generated files.
