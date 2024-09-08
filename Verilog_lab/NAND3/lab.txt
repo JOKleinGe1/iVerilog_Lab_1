@@ -1,0 +1,12 @@
+0. Simulate the project without modification. Check that the function
+corresponds to a 3-input NAND gate.
+
+1. Modify the code of the test.v file so that the simulation runs
+the different configurations of the C, B, A input in the order in which
+these configurations appear in a truth table (000, 001, 010, ...
+111). Simulate to verify.
+
+2. Copy the entire NAND3 directory (with the cp command) into a new
+NOR3 directory. Change the NAND3 function to NOR3 in the NAND3 code and
+adapt the file names and the makefile to be consistent with this new
+function. (NAND3.V -> NOR3.V) and the module name (NAND3 -> NOR3).
