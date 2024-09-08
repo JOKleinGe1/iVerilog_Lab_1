@@ -1,0 +1,9 @@
+0. Simulate the project without modification. Check that the output corresponds
+to a SOS signal in Morse code (... ___...).
+Keep a proof of this simulation.
+
+1. Copy the SOS_TITANIC directory (with the cp command) into a
+new VICTOIRE directory and change the code so that the output corresponds
+to the Morse signal of the V (... _ ). Adapt the name of the module (victoire)
+of the TITANIC.V file to VICTOIRE.V and the makefile in coherence.
+Simulate the new project. Keep a proof of this simulation.
