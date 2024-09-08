@@ -15,6 +15,6 @@ module testbench;
 	$dumpvars(0, testbench );
     	#80;    	
 	$finish;
-   end;
+   end
 endmodule
 
