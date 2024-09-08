@@ -15,5 +15,5 @@ module testbench;
     d <= 1'b0; 
     	#20;    	
    $finish;
-   end;
+   end
 endmodule
