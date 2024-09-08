@@ -5,3 +5,5 @@ Lab to learn basics about icarus, gtkwave verilog-hdl simulation tools and makef
 2. See DFF directory content and follow lab.txt.
 3. See SOS_TITANIC directory content and follow lab.txt.
 4. See PWM directory content and follow lab.txt. 
+5. See timer directory content and follow lab.txt. 
+6. See UART directory content and follow lab.txt. 
