@@ -1,0 +1,82 @@
+**********************************************************************************
+Synthèse Quartus d'un code Verilog
+**********************************************************************************
+En résumé : 
+
+Lancer quartus 
+Dans quartus, créer un projet : (nom sans espace ni accent, board:DE10Lite) > Un fichier MyNewProject.qpf (Quartus Project File)
+Déconnecter complétement les sorties non utilisées Sinon, les LED non utilisées seront allumées (faiblement)
+Ajouter le fichier verilog (truc.v) contenant le module truc, (pas son testbench). 
+Créer le symbole de votre design > Un fichier truc.bsf (bloc Symbol File) doit être créé. 
+Créer un fichier schematic Top_Truc.bsf (Bloc diagram Schematic File) 
+Y intégrer une instance de votre composant et connecter les entrées et sorties et leur donner les noms des entrées physiques 
+Enregistrer le fichier => création d'un fichier Top_truc.bdf 
+Ajuster le contenu du projet, y mettre votre truc.v et Top_Truc.bdf (retirer DE10Lite_GoldenTop)
+Designer le module Top_Truc.v en tant que sommet de la hierarche 
+Compiler le projet > Création du répertoire OutputFiles/MyNewProject.SOF,MyNewProject.POF
+Connecter et programmer la carte 
+C'est tout !
+
+**********************************************************************************
+En détail : 
+
+Lancer quartus 
+	Dans le terminal :  quartus &
+	Si la commande n'est pas connue (command not found)
+		L'executable "quartus" sur trouve dans le répertoire 
+		/home/fedora/intelFPGA_lite/23.1std/quartus/bin/quartus
+		Si ce n'est pas déjà fait, on peut le préciser à la fin du fichier .bashrc :
+		Dans le terminal : nano .bashrc, ajouter à la fin : 
+		export QSYS_ROOTDIR="/home/fedora/intelFPGA_lite/23.1std/quartus/sopc_builder/bin"
+
+Dans quartus, créer un projet : (nom sans espace ni accent, board:DE10Lite) 
+	Menu : FILE>New Project Wizard...
+	What is the name of this project: MyNewProject
+	[next>] Project Type: Empty project [next>]Add Files () [next>]
+	Familly, Device & Board Setting:|Device>[Board]MAX 10 DE10 - Lite[Next>]
+	(Eda Tools)[next>] [Finish]
+Un fichier MyNewProject.qpf (Quartus Project File)
+
+Déconnecter complétement les sorties non utilisées 
+	Assignement>Device>[Device Pin Option]>Unused Pins>As input tristated
+Sinon, les LED non utilisées seront allumées (faiblement)
+
+Ajouter le fichier verilog (truc.v) contenant le module truc, (pas son testbench). 
+	File>New... Design File>Verilog HDL File > Copier votre code verilog. 
+
+Créer le symbole de votre design 
+	File>Creat Up Date> Symbol File for current File
+Un fichier truc.bsf (bloc Symbol File) doit être créé. 
+
+Créer un fichier schematic Top_Truc.bsf (Bloc diagram Schematic File) 
+	File>New...>Deign File>Bloc diagram/Schematic File
+Y intégrer une instance de votre composant : 
+	[Dessin AND gate]=[Symbol Tool]>Project>(choisir son module) OK, le positionner
+Ajouter les entrées et sorties et leur donner les noms des entrées physiques 
+	Repérer (et copier) le nom dans la fenêtre [Assignement]>Pin Planner> Node Name
+	Le coller dans les instances des entrées et sorties. 
+Enregistrer le fichier => création d'un fichier Top_truc.bdf 
+	(pas Truc.dbf sinon confusion avec truc.v qui existe déjà)
+
+Ajuster le contenu du projet, y mettre votre truc.v et Top_Truc.bdf
+	Project>Add Remove Files in Project>
+	Retirer DE10_Lite_Golden_Top.v [Remove]
+	[OK]
+
+Designer le module Top_Truc.v en tant que sommet de la hierarche 
+	Dans le project navigator, en mode [Files] (et pas hierarchy)
+	sélectionner le fichier Top_Truc.v + clic-droit > Set as Top Level Entity
+
+Compiler le projet 
+	Processing>Start Compilation ... attendre ... 
+	Si tout est ok (0 error mais +200 warnings) >  
+Création du répertoire OutputFiles/MyNewProject.SOF,MyNewProject.POF
+
+Connecter et programmer la carte 
+	Tools>Programmer>
+	Verifier la connection USB
+		[Hardware Setup]>Currently Selected Hardware: USB-Blaster 
+	Verifier le fichier de programmation (POF/SOF) 
+	[Start]...attendre...> 100%. 
+C'est tout !
+**********************************************************************************
