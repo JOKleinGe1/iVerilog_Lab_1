@@ -1,7 +1,9 @@
 Tuto QARTUS : 
+
 En résumé : 
 
 Lancer quartus 
+
 Dans quartus, créer un projet : (nom sans espace ni accent, board:DE10Lite) > Un fichier MyNewProject.qpf (Quartus Project File)
 
 Déconnecter complétement les sorties non utilisées Sinon, les LED non utilisées seront allumées (faiblement)
